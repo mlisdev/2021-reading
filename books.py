@@ -1,6 +1,7 @@
 #import required modules 
 import csv 
 
+#print first row to check header names 
 with open('2021books.csv') as csv_file:
     csv_reader = csv.reader(csv_file, delimiter = ',')
     list_of_column_names = []
