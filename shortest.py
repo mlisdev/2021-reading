@@ -11,7 +11,7 @@ with open ('2021books.csv', 'r') as csvfile:
     rereadIndex = 11 
 
     shortestTitle = ""
-    numDays = 0
+    numDays = 1
     
     shortestList = []
     
@@ -32,5 +32,5 @@ with open ('2021books.csv', 'r') as csvfile:
                 numDays = intDaysRead
                 shortestTitle = row[titleIndex]
                 shortestList.append(shortestTitle)
-    print (shortestList)
-        
+                
+print("\n".join(shortestList))
